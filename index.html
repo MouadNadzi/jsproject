@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style-index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Container con2">
+
+        
+        <form method="post" id="form1">
+            <h3>Login Here</h3>
+            <div class="user-prev">
+
+                <label for="username">Username</label>
+                
+        
+                <input type="text" placeholder="User" id="username" autocomplete="off">
+                <div class="user-notif">est obligatoire, entrer un username valide entre 3 et 30 caractère</div>
+            </div>
+            <div class="email-prev">
+
+                <label for="email">Email</label>
+                
+        
+                <input type="email" placeholder="exemple@company.com" id="email" autocomplete="off">
+                <div class="em-notif">est obligatoire, entrer un email valide</div>
+            </div>
+            <div class="pass-prev">
+
+                <label for="password">Password</label>
+                
+            
+                <input type="password" placeholder="Password" id="password">
+                
+                <a class="toggle-password-button" id="toggle-password-button">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/633/633655.png"
+                id="closed-eye">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/633/633633.png"
+                id="open-eye" class="hide">
+                </a>
+                <div class="pass-notif">Le mot de passe doit contenir au moins 8 caractères, dont au moins 1 minuscule, 1
+                majuscule, 1 chiffre et 1 caractère spécial (!@#$%^&amp;*).</div>
+                <input type="password" placeholder="Confirm Password" id="cpassword">
+                <div class="cpass-notif">Le mot de passe doit etre similaire au precedent.</div>
+                
+                <a class="toggle-password-button" id="toggle-password-button">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/633/633655.png"
+                id="closed-eye">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/633/633633.png"
+                id="open-eye" class="hide">
+                </a>
+                
+            </div>
+
+
+            <input type="button" id="login-btn" value="LOG IN">
+        
+
+        </form>
+    </div>
+    <script src="./scripts/script-index.js"></script>
+</body>
+</html>
